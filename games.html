@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/026cb9c3e6.js" crossorigin="anonymous"></script>
+        <title>Backlog</title>
+    </head>
+    <body>
+        <div class="nav-background">
+            <nav class="nav-bar">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                <div class="nav-links">
+                    <a href="games.html">Games</a>
+                    <a href="books.html">Books</a>
+                    <a href="movies.html">Movies</a>
+                </div>
+            </nav>
+        </div>
+        <p class="fav-title">(⭐ for games with 100% completion)</p>
+        <h1 class="fav-title">Video Games Backlog</h1>
+        <main class="log">
+            <ul>
+                <li>Batman: Arkham City, Arkham Origins, Arkham Knight</li>
+                <li><s>Crash Bandicoot N. Sane Trilogy</s>⭐</li>
+                <li>Bioshock 2, Bioshock Infinite</li>
+                <li>Days Gone</li>
+                <li>Dave the diver</li>
+                <li>Elden Ring</li>
+                <li>Deathloop</li>
+                <li>Skyrim</li>
+                <li>Enter the gungeon</li>
+                <li>Fallout 3, Fallout 4</li>
+                <li>Farcry 3</li>
+                <li>The Forest</li>
+                <li>GTA 3, GTA Vice City, GTA San Andreas, GTA 4</li>
+                <li>Hades</li>
+                <li>Half Life: Opposing Forces, Half Life: Blueshift</li>
+                <li>Half Life 2: Episode 1, Half Life 2: Episode 2</li>
+                <li>Hollow Knight</li>
+                <li>Inscryption</li>
+                <li>Jump King</li>
+                <li>Mirror's Edge</li>
+                <li>Ori Will of the Wisps</li>
+                <li>Outlast, Outlast 2</li>
+                <li>Oxenfree</li>
+                <li>Papers Please</li>
+                <li>Pizza Tower</li>
+                <li><s>Potion Craft</s>⭐</li>
+                <li>Raft</li>
+                <li>Rain World</li>
+                <li>Resident Evil 3</li>
+                <li>Satisfactory</li>
+                <li>Slime Rancher</li>
+                <li>Sons of the forest</li>
+                <li>Spyro Trilogy</li>
+                <li>Star Wars: Fallen Order</li>
+                <li>Teardown</li>
+                <li>Undertale</li>
+                <li>Life is Strange</li>
+                <li>Mafia 1, Mafia 2, Mafia 3</li>
+                <li>Five Nights at Freddy's: Security Breach</li>
+                <li>Halo: Combat evolved, Halo 2, Halo 3, Halo ODST, Halo Reach, Halo 4</li>
+                <li>Just Cause 3</li>
+                <li>Stalker: Shadow of Chernobyl, Stalker: Clear Sky, Stalker: Call of Pripyat</li>
+                <li>Alien Isolation</li>
+                <li>Peaks of Yore</li>
+                <li>Wolfenstein Old Blood, Wolfenstein 2, Wolfenstein Young Blood</li>
+                <li>Road 96</li>
+                <li>Disco Elysium</li>
+                <li>The Binding Of Isaac</li>
+                <li>The Stanley Parable</li>
+                <li>Super Mario 3D World</li>
+                <li>Super Mario Galaxy, Super Mario Galaxy 2</li>
+                <li>Lego Star Wars: The Skywalker Saga</li>
+                <li>Superhot: Mind Control Delete</li>
+                <li>Ultrakill</li>
+                <li>Horizon Zero Dawn: Remastered</li>
+                <li>God Of War</li>
+                <li>The Last Of Us: Part 1</li>
+                <li>Mass Effect, Mass Effect 2, Mass Effect 3</li>
+                <li><s>Metro 2033</s>, Metro Last Light, Metro Exodus</li>
+                <li>Cruely Squad</li>
+                <li>The Walking Dead: The Telltale Definitive Series</li>
+                <li>Lego Batman 2, Lego Batman 3, Lego Marvel Super Heroes, Lego Marvel Super Heroes 2, The Lego Movie Videogame, The Lego Movie 2 Videogame, Lego Marvel's Avengers, Lego Harry Potter: Years 1-4, Lego Harry Potter: Years 5-7, Lego The Lord Of The Rings, Lego The Hobbit, Lego Jurrasic World, Lego DC Super Villains, Lego The Incredibles, Lego Worlds</li>
+                <li>Bugsnax</li> 
+                <li>Doom 1, Doom 2, Doom 3</li>
+                <li>Dead Island</li> 
+                <li>Dusk</li>
+                <li>Prey</li>
+                <li>Super Meat Boy</li>
+                <li>Doom Eternal: The Ancient Gods</li>
+                <li>Cruelty Squad</li>
+            </ul>
+        </main>
+        <div id="completedCount"></div>
+        <div class="copyright">Copyright © FrankTheBanker 2025</div>
+        <script>
+            // JavaScript to count the number of completed games
+            window.onload = function() {
+                // Find all elements that are crossed out (with <s> tag)
+                const completedGames = document.querySelectorAll('s');
+                // Count the number of completed games
+                const completedCount = completedGames.length;
+                // Display the count in the #completedCount div
+                document.getElementById('completedCount').innerHTML = `Completed games: ${completedCount}`;
+            }
+        </script>
+    </body>
+</html>
